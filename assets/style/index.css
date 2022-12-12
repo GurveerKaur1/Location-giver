@@ -1,0 +1,371 @@
+@import "./base.css";
+:root {
+    --app-dark-bg: #1a1d28;
+    --app-red: #ff3c57;
+    --app-green: #33ab4e;
+    --app-purple: #833cff;
+    --app-orange: #ff833c;
+    --app-blue: #3c57ff;
+    --app-blue-hover: #364ee6;
+    --app-white: #fff;
+    --app-branding: #ff3c57;
+}
+
+
+
+
+.container{
+    width:min(100% - 30px, 1280px);
+    margin-inline: auto;
+}
+
+
+.flexbox{
+    display: flex;
+}
+
+body{
+    background-color: rgb(20 24 28/0.4); ;
+}
+
+.hello{
+    height:100vh;
+    width: 100%;
+    background-image: url(../img/pexels-eberhard-grossgasteiger-2098428.jpg);
+    background-size: cover;
+    background-position: center;
+}
+header{
+    height: 60px;
+}
+
+h1 span {
+    color: #f9004d;
+}
+
+header {
+    height: 60px;
+}
+
+.flexbox {
+    display: flex;
+}
+
+.title {
+    width: 70%;
+    height: 56%;
+}
+
+.title h1 {
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 56px;
+    font-family: "Roboto", sans-serif;
+    color: #dcdcdc;
+    letter-spacing: 0.2px;
+}
+.tag{
+    font-size: 25px;
+    color: white;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+nav {
+    width: 30%;
+    text-align: right;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    line-height: 56px;
+    cursor: default;
+}
+
+nav ul li a {
+    font-size: 18px;
+    color: #dcdcdc;
+    font-weight: 525;
+    text-decoration: none;
+    letter-spacing: 0.2px;
+    cursor: pointer;
+    line-height: 60px;
+    font-family: Madefor, Helvetica Neue, Helvetica, Arial, Hiragino Kaku Gothic Pro W3, Hiragino Kaku Gothic Pro, sans-serif !important;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav ul li+li {
+    margin-left: 18px;
+}
+
+/* --------------- */
+/* Section          */
+/* --------------- */
+
+#map {
+    display: grid;
+    place-items: center;
+    height: 500px;
+    width: 500px;
+    background-color: lightgray;
+}
+
+#mapbox-improve-map {
+    display: none;
+}
+
+.mapboxgl-ctrl-logo {
+    visibility: hidden;
+}
+.banner2 {
+   display: grid;
+   place-items: center;
+    height: calc(100vh - 60px - 95px);
+  
+}
+
+.banner {
+    background: #fff url(../img/banner.jpg) center center / cover no-repeat;
+    height: calc(100vh - 60px);
+    color: #fff;
+}
+
+.overlay {
+    min-height: calc(100vh - 60px);
+    background-color: rgb(20 24 28/0.4);
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.welcome {
+    font-size: 22px;
+}
+
+.box {
+
+    border-radius: 8px;
+    background-color: rgb(124 123 123/0.4);
+    padding: 8px;
+    color: #ff3c57;
+}
+
+.text {
+    font-weight: 300;
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+.more-btn {
+    margin-top: 10px;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    inset: auto 50px 50px auto;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 26px 30px -10px, rgba(0, 0, 0, 0.1) 0px 16px 10px -10px;
+    background-color: #ff3c57;
+    transition: all 0.9s ease-in-out;
+}
+
+.section.lessdelay {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.6s;
+}
+
+.more-btn.is-visible {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0.7s;
+}
+
+
+
+/* --------------- */
+/* footer          */
+/* --------------- */
+
+.flexbox {
+    display: flex;
+}
+
+
+footer {
+    background-color: #fff;
+    height: 80px;
+    margin-top: 20px;
+    
+}
+footer .container{
+    /*width:min(100% - 30px, 1280px);*/
+    margin-inline: auto;
+}
+
+
+
+ 
+ .tags {
+    width: 100%;
+    text-align: center;
+}
+
+ .tags ul {
+    /*Removing the bullet points from the li's*/
+    list-style: none;
+    font-size: 0;
+}
+
+.cake, .cake2{
+    display:flex;
+}
+
+
+.cake p, .cake2 p, .cake .head, .cookies .cake2 p{
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #000;
+    text-align: left;
+}
+.cake p, .cookies p {
+    font-size: 20px;
+    color:saddlebrown;
+}
+.cake .price{
+    margin-left: 160px;
+}
+.head{
+    margin: 0;
+}
+ .tags ul li {
+    display: inline;
+    line-height: 80px;
+    cursor: default;
+}
+
+.rows+.rows{
+    margin-top: 20px;
+}
+section h2{
+    font-size: 40px;
+    font-family: "PT Serif", serif;
+}
+.tags ul li a, .tags ul .foot{
+    background-color: #d6d6d6;
+    font-size: 17px;
+    color:  var(--app-white);
+    text-decoration: none;
+    font-weight: 600px;
+    letter-spacing: 0.2px;
+    cursor: pointer;
+    transition: transform .4s;
+}
+
+.tags li a, .tags ul .foot {
+    border: 2px solid #d6d6d6;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 5px;
+}
+
+.tags ul li a i:hover{
+    transform:scale(1.5);
+    font-size: 22px;
+    cursor:pointer;
+}
+
+@media (max-width:800px ){
+    
+    .tags ul li a{
+      font-size: 10px;
+
+    }
+
+    .copy{
+        font-size:13px ;
+    }
+    .copy{
+        font-size:13px ;
+    }
+   footer .copy{
+       text-align: right;
+        width: 100%;
+    }
+}
+
+
+
+/*@media (max-width:390px){
+    
+
+  nav ul li a{
+    display: none;
+  }
+
+ nav ul .tag {
+    display:inline;
+      font-size:20px;
+      color: var(--app-white);
+      /*margin-left:280px;*/
+/* }
+}*/
+
+
+.round{
+    background-color: none;
+    border-left:2px solid #191919 ;
+    border-end-start-radius: 50%;
+    border-end-end-radius: 50%;
+    border-start-end-radius: 50%;
+    border-start-start-radius: 50%;
+    border-block-end: #fff;
+    border-right:2px solid #fff;
+    border-bottom:2px solid #fff;
+    /* border-bottom-left-radius: 50%;
+    /* border-bottom-right-radius: 50%; */
+    /*border-top-right-radius: 50%;
+    border-top-left-radius: 50%; */
+    height: 40px;
+    width: 40px;
+    animation: rotate 1s linear infinite;
+  
+  }
+  
+  @keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+  }
+  
+.message{
+  display: none;
+  text-align: center;
+}
+.message p{
+    font-size: 20px;
+    color: var(--app-red);
+   
+}
+
+span{
+    color: black
+}
