@@ -49,7 +49,40 @@ if(navigator.geolocation){
 }
 
 
+function print(arg) {
+    console.log(arg);
+}
 
+
+const dialog = document.querySelector('dialog');
+const openDialog = document.querySelector('.tag')
+const closeDialog = document.querySelector('.icon2')
+
+openDialog.addEventListener('click', () => {
+    dialog.classList.add('.dialog')
+   dialog.showModal();
+})
+
+closeDialog.addEventListener('click', () => {
+    dialog.close()
+});
+
+/*
+ The Element.getBoundingClientRect() method returns a DOMRect object
+ providing information about the size of an element and its position
+ relative to the viewport
+*/
+
+dialog.addEventListener('click', function(event) {
+    
+    event.preventDefault()
+    const rect = this.getBoundingClientRect();
+
+    if(event.clientY < rect.top || event.clientY > rect.bottom || 
+        event.clientX < rect.left || event.clientX > rect.right){
+            dialog.close()
+        }
+})
 
 
 

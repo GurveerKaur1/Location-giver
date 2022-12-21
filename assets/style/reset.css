@@ -47,7 +47,7 @@ ul, ol {
   display: block;
   max-width: 100%;
 }*/
-
+/* 
 p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
@@ -67,7 +67,7 @@ input, textarea, button {
 
 input[type=button], input[type=submit], input[type=clear], button, a {
   cursor: pointer;
-}
+} */
 
 /*@media (prefers-reduced-motion: reduce) {
   html:focus-within {
