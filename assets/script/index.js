@@ -4,18 +4,6 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiZ3VydmVlcjEiLCJhIjoiY2xia3lnanE0MDJibjNycG1hZ
 const round = document.querySelector('.round')
 const message = document.querySelector('.message')
 
-
-// const map = new mapboxgl.Map({
-// container: 'map', 
-
-// style: 'mapbox://styles/mapbox/streets-v12',
-// center: [-94.1, 49.8], 
-// zoom: 9 ,
-// attributionControl: false,
-// });
-
-
-
 let geolocate = new mapboxgl.GeolocateControl({
     positionOptions: {
         enableHighAccuracy: true,
@@ -59,6 +47,8 @@ if(navigator.geolocation){
    
     console.log('GeoLocation is not supported by this browser')
 }
+
+
 
 
 
